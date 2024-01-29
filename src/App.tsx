@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Counter />
-      <hr style={{ borderTop: "3px solid #bbb" }} />
+      <hr className="divided" />
       <SignalsCounter />
     </div>
   );

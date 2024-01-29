@@ -14,12 +14,23 @@ export const Counter = () => {
   };
 
   return (
-    <div>
-      <h2>Counter with useState</h2>
-      <button onClick={decrease}>Decrease</button>
-      <h4>Count: {count}</h4>
-      <button onClick={increase}>Increase</button>
-      <h4>Double Count: {count * 2}</h4>
+    <div className="container">
+      <h2 className="counter-header">
+        Counter with{" "}
+        <span className="highlight" style={{ color: "#DF826C" }}>
+          useState
+        </span>
+      </h2>
+      <div className="wrapper">
+        <button className="counter-button" onClick={decrease}>
+          -
+        </button>
+        <h4 className="counter-text">Count: {count}</h4>
+        <button className="counter-button" onClick={increase}>
+          +
+        </button>
+      </div>
+      <h4 className="counter-text">Double Count: {count * 2}</h4>
     </div>
   );
 };
