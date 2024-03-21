@@ -5,6 +5,8 @@ export const Counter = () => {
 
   const [count, setCount] = useState(0);
 
+  const doubleCount = count * 2;
+
   const increase = () => {
     setCount((prev) => prev + 1);
   };
@@ -30,7 +32,7 @@ export const Counter = () => {
           +
         </button>
       </div>
-      <h4 className="counter-text">Double Count: {count * 2}</h4>
+      <h4 className="counter-text">Double Count: {doubleCount}</h4>
     </div>
   );
 };
